@@ -5,8 +5,8 @@ class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <Link className="navbar-brand" to="/">
+        <nav className="navbar navbar-expand-lg navbar-light bg-primary p-2 ">
+          <Link className="navbar-brand text-white" to="/">
             musMania
           </Link>
           <button
@@ -23,19 +23,15 @@ class Navbar extends Component {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav m-auto">
-              <li className="nav-item active">
-                <Link className="nav-link" to="/">
+              <li className="nav-item ">
+                <Link className="nav-link text-white" to="/">
                   Home <span className="sr-only">(current)</span>
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/singles">
-                  Singles
-                </Link>
-              </li>
+
               <li className="nav-item dropdown">
                 <Link
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle text-white"
                   href="#"
                   id="navbarDropdown"
                   role="button"
@@ -46,16 +42,16 @@ class Navbar extends Component {
                   Genre
                 </Link>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <Link className="dropdown-item" to="/hiphop">
+                  <Link className="dropdown-item " to="/hiphop">
                     Hip Hop
                   </Link>
-                  <Link className="dropdown-item" to="/rnb">
+                  <Link className="dropdown-item " to="/rnb">
                     Rnb
                   </Link>
                 </div>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/admin">
+                <Link className="nav-link text-white" to="/admin">
                   Admin
                 </Link>
               </li>

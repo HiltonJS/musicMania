@@ -22,8 +22,10 @@ const TopHipHop = ({ hipHop }) => {
                   <tr>
                     <th scope="row">{hiphop.artist}</th>
                     <td>{hiphop.album}</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td>{hiphop.year}</td>
+                    <td>
+                      <a href={hiphop.url}>Download</a>
+                    </td>
                   </tr>
                 );
               })}

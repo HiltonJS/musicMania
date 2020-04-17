@@ -10,7 +10,7 @@ import FormPage from './pages/admin/admin';
 
 function App() {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <Navbar />
       <Switch>
         <Route exact path="/" component={HomePage} />

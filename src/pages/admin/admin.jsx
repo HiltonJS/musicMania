@@ -4,14 +4,14 @@ import './admin.styles.scss';
 
 const FormPage = () => {
   return (
-    <div className="container load-music">
+    <div className="container p-3 ">
       <MDBContainer>
         <MDBRow>
           <MDBCol md="6">
             <form>
               <p className="h4 text-center mb-4">Load Music</p>
               <label htmlFor="defaultFormLoginEmailEx" className="grey-text">
-                Your email
+                Artist
               </label>
               <input
                 type="email"
@@ -19,7 +19,7 @@ const FormPage = () => {
                 className="form-control"
               />
               <label htmlFor="defaultFormLoginEmailEx" className="grey-text">
-                Your email
+                Album
               </label>
               <input
                 type="email"
@@ -28,7 +28,7 @@ const FormPage = () => {
               />
               <br />
               <label htmlFor="defaultFormLoginEmailEx" className="grey-text">
-                Your email
+                Year
               </label>
               <input
                 type="email"
