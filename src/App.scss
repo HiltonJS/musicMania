@@ -10,3 +10,12 @@ body {
   color: rgb(15, 15, 15);
   font-weight: 400;
 }
+.img-fluid {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.table .thead-dark th {
+  background-color: #4285f4 !important;
+  border-color: #7bbcfd !important;
+}

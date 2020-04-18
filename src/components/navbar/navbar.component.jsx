@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { Logo } from '../../images/Logo.png';
 
 class Navbar extends Component {
   render() {
@@ -7,6 +8,7 @@ class Navbar extends Component {
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-primary p-2 ">
           <Link className="navbar-brand text-white" to="/">
+            <img src={Logo} alt="" />
             musMania
           </Link>
           <button
@@ -25,14 +27,15 @@ class Navbar extends Component {
             <ul className="navbar-nav m-auto">
               <li className="nav-item ">
                 <Link className="nav-link text-white" to="/">
-                  Home <span className="sr-only">(current)</span>
+                  Home
+                  <span className="sr-only">(current)</span>
                 </Link>
               </li>
 
               <li className="nav-item dropdown">
                 <Link
                   className="nav-link dropdown-toggle text-white"
-                  href="#"
+                  to="#"
                   id="navbarDropdown"
                   role="button"
                   data-toggle="dropdown"
@@ -50,11 +53,7 @@ class Navbar extends Component {
                   </Link>
                 </div>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link text-white" to="/admin">
-                  Admin
-                </Link>
-              </li>
+              <li className="nav-item"></li>
             </ul>
           </div>
         </nav>
