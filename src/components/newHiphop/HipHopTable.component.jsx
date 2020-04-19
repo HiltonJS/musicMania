@@ -28,7 +28,9 @@ const MusicTable = ({ filteredMusic, heading }) => {
                   <td>{album.album}</td>
                   <td>{album.year}</td>
                   <td>
-                    <a href={album.url}>Download</a>
+                    <a href={album.url} target="blank">
+                      Download
+                    </a>
                   </td>
                 </tr>
               );
