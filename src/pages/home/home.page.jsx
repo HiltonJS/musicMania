@@ -3,10 +3,12 @@ import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import MusicTable from '../../components/newHiphop/HipHopTable.component';
 
-import SinglesList from '../../components/singlesList/singlesList.component';
 import { fetchMusic } from '../../redux/dataActions';
 import SpinnerPage from '../../components/Spinner.component';
+import axios from 'axios';
 //import axios from 'axios';
+axios.defaults.baseURL =
+  'https://us-central1-musapp-827c0.cloudfunctions.net/api';
 const HomePage = () => {
   const allMusic2 = useSelector((state) => state.allMusic);
   const dispatch = useDispatch();
@@ -40,7 +42,6 @@ const HomePage = () => {
     <div className="container p-3">
       <MusicTable filteredMusic={hiphop} heading={'Top Hip Hop'} />
       <MusicTable filteredMusic={rnb} heading={'Top Rnb'} />
-      <SinglesList />
     </div>
   );
 };
