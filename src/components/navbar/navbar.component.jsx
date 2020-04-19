@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Logo } from '../../images/Logo.png';
+import Logo from '../../images/Logo.png';
 
 class Navbar extends Component {
   render() {
@@ -8,7 +8,13 @@ class Navbar extends Component {
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-primary p-2 ">
           <Link className="navbar-brand text-white" to="/">
-            <img src={Logo} alt="" />
+            <img
+              src={Logo}
+              width="30"
+              height="30"
+              class="d-inline-block align-top "
+              alt="logo"
+            />
             musMania
           </Link>
           <button
